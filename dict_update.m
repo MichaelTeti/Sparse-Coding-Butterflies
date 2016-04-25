@@ -9,7 +9,7 @@ for j=1:length(p);
 	alpha_comp=[alpha_comp; alpha_temp(p(j))'];
 end
 	
-r=alpha_comp*D_temp-Y;
+r=alpha_comp'*D_temp'-Y';
 r=sum(sum(r.^2));
 
 end
