@@ -2,7 +2,7 @@ function r=dict_update(X, D_temp, alpha_temp)
 
 Y=[];
 alpha_comp=[];
-[p]=find(alpha_temp~=0);
+[p ~]=find(alpha_temp~=0);
 for j=1:length(p);
 	Xcols=X(:, p(j))';
 	Y=[Y; Xcols];
