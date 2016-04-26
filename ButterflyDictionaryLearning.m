@@ -46,6 +46,7 @@ for i=1:length(foldersNames), %loop through all folders
     end
 end
 
+X=X(:, randperm(ceil(size(X, 2)/4)));
 save('data.mat', 'X');
 
 
