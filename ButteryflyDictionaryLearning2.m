@@ -32,7 +32,7 @@ D=zeros(size(X, 1), k);
 RandX=randperm(size(X, 2));
 RandX=RandX(1:k);
 for j=1:length(RandX)
-	D(:, i)=X(:, RandX(i))
+	D(:, j)=X(:, RandX(j))
 end
 
 alpha=zeros(size(D, 2), size(X, 2)); 
